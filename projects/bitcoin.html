@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bitcoin Wallet - Detalhes do Projeto</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">&lt;Gabriel Santos /&gt;</div>
+            <ul class="nav-links">
+                <li><a href="../index.html#home">Home</a></li>
+                <li><a href="../index.html#projects">Voltar aos Projetos</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="hero" style="padding: 60px 0; background: linear-gradient(135deg, #d97706 0%, #b45309 100%);">
+        <div class="container" style="text-align: center;">
+            <h1>Secure Bitcoin Wallet Generator</h1>
+            <p class="tagline" style="color: #fde68a;">Implementação de Criptografia de Curva Elíptica</p>
+        </div>
+    </section>
+
+    <section class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text" style="flex: 3;">
+                    <h2>O Desafio</h2>
+                    <p>
+                        Entender profundamente como a segurança do Blockchain funciona "por baixo do capô", sem depender 
+                        de bibliotecas prontas que escondem a complexidade matemática.
+                    </p>
+                    
+                    <h2 style="margin-top: 30px;">A Solução</h2>
+                    <p>
+                        Criei um gerador de carteiras offline que implementa manualmente os passos de criação de chaves do Bitcoin. 
+                        O projeto manipula algoritmos de hashing e criptografia assimétrica para gerar endereços válidos na rede.
+                    </p>
+
+                    <h3 style="margin-top: 20px; color: var(--primary-color);">Conceitos Aplicados:</h3>
+                    <ul style="margin-left: 20px; margin-top: 10px;">
+                        <li><strong>ECDSA (Secp256k1):</strong> Geração de par de chaves pública/privada via Curvas Elípticas.</li>
+                        <li><strong>Hashing:</strong> Uso combinado de SHA-256 e RIPEMD-160.</li>
+                        <li><strong>Segurança:</strong> Geração segura de números aleatórios (RNG) para a chave privada.</li>
+                    </ul>
+                </div>
+
+                <div class="about-stats" style="flex: 1;">
+                    <div class="stat">
+                        <h3>Tech Stack</h3>
+                        <div class="tech-stack" style="justify-content: center;">
+                            <span class="tech">C#</span>
+                            <span class="tech">Cryptography</span>
+                            <span class="tech">Blockchain</span>
+                        </div>
+                    </div>
+                    <div class="stat" style="margin-top: 20px;">
+                        <a href="https://github.com/mrwenzle/BitcoinWalletGenerator.git" target="_blank" class="btn btn-primary" style="width: 100%; margin:0;">
+                            <i class="fab fa-github"></i> Ver Código
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Gabriel Silva Santos.</p>
+        </div>
+    </footer>
+</body>
+</html>

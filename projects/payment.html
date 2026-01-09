@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Gateway - Detalhes do Projeto</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">&lt;Gabriel Santos /&gt;</div>
+            <ul class="nav-links">
+                <li><a href="../index.html#home">Home</a></li>
+                <li><a href="../index.html#projects">Voltar aos Projetos</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="hero" style="padding: 60px 0; background: linear-gradient(135deg, #7c3aed 0%, #6d28d9 100%);">
+        <div class="container" style="text-align: center;">
+            <h1>Payment Gateway Integration</h1>
+            <p class="tagline" style="color: #ddd6fe;">Arquitetura Resiliente com SOLID e Design Patterns</p>
+        </div>
+    </section>
+
+    <section class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text" style="flex: 3;">
+                    <h2>O Desafio</h2>
+                    <p>
+                        Integrações financeiras falham. O desafio era criar um sistema que não apenas processasse pagamentos, 
+                        mas que soubesse lidar com falhas de rede, timeouts e erros de terceiros sem perder dados.
+                    </p>
+                    
+                    <h2 style="margin-top: 30px;">A Solução</h2>
+                    <p>
+                        Implementei um Gateway de Pagamentos seguindo rigorosamente os princípios <strong>SOLID</strong>. 
+                        Utilizei Interfaces para desacoplar a aplicação do provedor de pagamento (permitindo troca fácil de fornecedor).
+                    </p>
+
+                    <h3 style="margin-top: 20px; color: var(--primary-color);">Destaques Técnicos:</h3>
+                    <ul style="margin-left: 20px; margin-top: 10px;">
+                        <li><strong>Retry Pattern:</strong> O sistema tenta reenviar a transação automaticamente em caso de falha temporária.</li>
+                        <li><strong>Adapter Pattern:</strong> Padronização de diferentes APIs de pagamento em uma interface única.</li>
+                        <li><strong>Logs Detalhados:</strong> Rastreabilidade total de cada tentativa de pagamento.</li>
+                    </ul>
+                </div>
+
+                <div class="about-stats" style="flex: 1;">
+                    <div class="stat">
+                        <h3>Tech Stack</h3>
+                        <div class="tech-stack" style="justify-content: center;">
+                            <span class="tech">C#</span>
+                            <span class="tech">SOLID</span>
+                            <span class="tech">Design Patterns</span>
+                        </div>
+                    </div>
+                    <div class="stat" style="margin-top: 20px;">
+                        <a href="https://github.com/mrwenzle/PaymentGatewayIntegration.git" target="_blank" class="btn btn-primary" style="width: 100%; margin:0;">
+                            <i class="fab fa-github"></i> Ver Código
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Gabriel Silva Santos.</p>
+        </div>
+    </footer>
+</body>
+</html>

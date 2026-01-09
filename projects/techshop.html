@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechShop - Detalhes do Projeto</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">&lt;Gabriel Santos /&gt;</div>
+            <ul class="nav-links">
+                <li><a href="../index.html#home">Home</a></li>
+                <li><a href="../index.html#projects">Voltar aos Projetos</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="hero" style="padding: 60px 0; background: linear-gradient(135deg, #059669 0%, #047857 100%);">
+        <div class="container" style="text-align: center;">
+            <h1>TechShop Order Processor</h1>
+            <p class="tagline" style="color: #a7f3d0;">Backend Corporativo com Validação de Regras de Negócio</p>
+        </div>
+    </section>
+
+    <section class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text" style="flex: 3;">
+                    <h2>O Desafio</h2>
+                    <p>
+                        Simular o backend de um e-commerce de grande porte, onde é necessário processar milhares de pedidos, 
+                        validar estoque, calcular fretes complexos e gerar relatórios gerenciais, garantindo a integridade dos dados.
+                    </p>
+                    
+                    <h2 style="margin-top: 30px;">A Solução</h2>
+                    <p>
+                        Desenvolvi um processador de pedidos robusto em <strong>.NET Core</strong>. O foco foi o uso de <strong>LINQ</strong> 
+                        para manipular coleções de dados de forma performática e a implementação de classes de serviço dedicadas para cada regra de negócio.
+                    </p>
+
+                    <h3 style="margin-top: 20px; color: var(--primary-color);">Destaques Técnicos:</h3>
+                    <ul style="margin-left: 20px; margin-top: 10px;">
+                        <li><strong>LINQ Avançado:</strong> Utilizado para filtrar pedidos, agrupar vendas por categoria e calcular totais.</li>
+                        <li><strong>Validação:</strong> Sistema que impede vendas de itens sem estoque ou com dados inválidos.</li>
+                        <li><strong>Relatórios:</strong> Geração automática de arquivos CSV com o resumo diário das operações.</li>
+                    </ul>
+                </div>
+
+                <div class="about-stats" style="flex: 1;">
+                    <div class="stat">
+                        <h3>Tech Stack</h3>
+                        <div class="tech-stack" style="justify-content: center;">
+                            <span class="tech">C#</span>
+                            <span class="tech">.NET Core</span>
+                            <span class="tech">LINQ</span>
+                            <span class="tech">File I/O</span>
+                        </div>
+                    </div>
+                    <div class="stat" style="margin-top: 20px;">
+                        <a href="https://github.com/mrwenzle/TechShopOrderProcessor.git" target="_blank" class="btn btn-primary" style="width: 100%; margin:0;">
+                            <i class="fab fa-github"></i> Ver Código
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Gabriel Silva Santos.</p>
+        </div>
+    </footer>
+</body>
+</html>

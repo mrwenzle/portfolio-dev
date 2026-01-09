@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>English App - Detalhes do Projeto</title>
+    <link rel="stylesheet" href="../css/styles.css"> <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">&lt;Gabriel Santos /&gt;</div>
+            <ul class="nav-links">
+                <li><a href="../index.html#home">Home</a></li>
+                <li><a href="../index.html#projects">Voltar aos Projetos</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="hero" style="padding: 60px 0; background: linear-gradient(135deg, #2563eb 0%, #1e40af 100%);">
+        <div class="container" style="text-align: center;">
+            <h1>English Dictionary App</h1>
+            <p class="tagline" style="color: #bfdbfe;">Aplicação Desktop WPF com Arquitetura MVVM</p>
+        </div>
+    </section>
+
+    <section class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text" style="flex: 3;">
+                    <h2>O Desafio</h2>
+                    <p>
+                        Criar uma ferramenta de estudo de inglês rápida e offline-first, que não dependesse de navegadores pesados. 
+                        O objetivo técnico era implementar uma separação clara entre a interface (View) e a lógica (ViewModel).
+                    </p>
+                    
+                    <h2 style="margin-top: 30px;">A Solução</h2>
+                    <p>
+                        Desenvolvi uma aplicação <strong>WPF (.NET 8)</strong> utilizando o padrão <strong>MVVM</strong> com a biblioteca 
+                        <em>CommunityToolkit.Mvvm</em>. Isso permitiu criar uma interface reativa, onde a tela atualiza automaticamente 
+                        quando os dados mudam, sem precisar de código "spaghetti" no backend da View.
+                    </p>
+
+                    <h3 style="margin-top: 20px; color: var(--primary-color);">Funcionalidades Principais:</h3>
+                    <ul style="margin-left: 20px; margin-top: 10px;">
+                        <li>Busca de definições em tempo real via API REST.</li>
+                        <li>Interface moderna utilizando XAML e Material Design.</li>
+                        <li>Tratamento de erros e estados de carregamento (Loading Spinner).</li>
+                        <li>Pronúncia de áudio integrada.</li>
+                    </ul>
+                </div>
+
+                <div class="about-stats" style="flex: 1;">
+                    <div class="stat">
+                        <h3>Tech Stack</h3>
+                        <div class="tech-stack" style="justify-content: center;">
+                            <span class="tech">C# .NET 8</span>
+                            <span class="tech">WPF</span>
+                            <span class="tech">MVVM Toolkit</span>
+                            <span class="tech">Rest API</span>
+                            <span class="tech">XAML</span>
+                        </div>
+                    </div>
+                    <div class="stat" style="margin-top: 20px;">
+                        <a href="https://github.com/mrwenzle/EnglishApp.git" target="_blank" class="btn btn-primary" style="width: 100%; margin:0;">
+                            <i class="fab fa-github"></i> Ver Código
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Gabriel Silva Santos.</p>
+        </div>
+    </footer>
+</body>
+</html>
